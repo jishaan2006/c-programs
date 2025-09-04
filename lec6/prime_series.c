@@ -1,3 +1,4 @@
+//to find all prime numbers from 1 to n.
 #include<stdio.h>
 int prime(int n)
 {
