@@ -3,7 +3,8 @@
 4 5 6 
 7 8 9 
 ootpt =>1 2 3 6 8 7 4 5
-*/#include<stdio.h>
+*/\
+#include<stdio.h>
 int main(){
     int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
     int top=0,right=2,bottom=2,left=0;
