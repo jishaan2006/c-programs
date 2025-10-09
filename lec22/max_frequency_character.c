@@ -3,6 +3,8 @@
 int main(){
     int frequency[256]={0};
     char arr[100];
+    int max=0;
+    char result;
     printf("Enter string :");
     scanf("%s",arr);
     int length=strlen(arr);
@@ -10,8 +12,11 @@ int main(){
         frequency[arr[i]]++;    
         }
     for(int i=0;i<256;i++){
-        if(frequency[i]>0)
-        printf("%c : %d\n",i,frequency[i]);
+        if(frequency[i]>max){
+        max=frequency[i];
+        result=i;
+        }
     }
+    printf("Character %c occured %d times",result,max);
 }
    
